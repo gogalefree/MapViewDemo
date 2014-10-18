@@ -93,16 +93,10 @@
 		E41BEFF119ED54E30074E546 /* MapViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4E0F36B19F29E520027ACFE /* Extensions */,
+				E4E0F36A19F29E150027ACFE /* Model */,
+				E4E0F36919F29E0B0027ACFE /* UI */,
 				E41BEFF419ED54E30074E546 /* AppDelegate.swift */,
-				E41BEFF619ED54E30074E546 /* MapVC.swift */,
-				E4350BBF19EFE321003BE39A /* EventDetailsView.swift */,
-				E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */,
-				E4350BB519EE6742003BE39A /* MDModel.swift */,
-				E4350BB319EE3ED2003BE39A /* MDAnnotation.swift */,
-				E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */,
-				E41BEFF819ED54E30074E546 /* Main.storyboard */,
-				E41BEFFB19ED54E30074E546 /* Images.xcassets */,
-				E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */,
 				E4350BC119F14051003BE39A /* Frameworks */,
 				E41BEFF219ED54E30074E546 /* Supporting Files */,
 			);
@@ -141,6 +135,36 @@
 				E41BF01619ED583E0074E546 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4E0F36919F29E0B0027ACFE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E41BEFF619ED54E30074E546 /* MapVC.swift */,
+				E4350BBF19EFE321003BE39A /* EventDetailsView.swift */,
+				E41BEFF819ED54E30074E546 /* Main.storyboard */,
+				E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */,
+				E41BEFFB19ED54E30074E546 /* Images.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E4E0F36A19F29E150027ACFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4350BB519EE6742003BE39A /* MDModel.swift */,
+				E4350BB319EE3ED2003BE39A /* MDAnnotation.swift */,
+				E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E4E0F36B19F29E520027ACFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
