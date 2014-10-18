@@ -25,6 +25,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        self.title = "Collect"
     }
     
     func setUp() {
