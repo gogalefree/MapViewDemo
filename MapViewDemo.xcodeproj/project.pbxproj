@@ -20,6 +20,12 @@
 		E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */; };
 		E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */; };
 		E4350BC019EFE321003BE39A /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBF19EFE321003BE39A /* EventDetailsView.swift */; };
+		E44CDA2F19F2FFE500E25B03 /* fork_truck-48.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */; };
+		E44CDA3119F3010400E25B03 /* angel-48.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3019F3010400E25B03 /* angel-48.png */; };
+		E44CDA3319F3015300E25B03 /* angel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3219F3015300E25B03 /* angel-32.png */; };
+		E44CDA3519F3016500E25B03 /* fork_truck-32.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3419F3016500E25B03 /* fork_truck-32.png */; };
+		E44CDA3719F3035E00E25B03 /* add_list-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3619F3035E00E25B03 /* add_list-26.png */; };
+		E44CDA3919F3063100E25B03 /* PublishMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CDA3819F3063100E25B03 /* PublishMainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDEventsTableVC.swift; sourceTree = "<group>"; };
 		E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		E4350BBF19EFE321003BE39A /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork_truck-48.png"; sourceTree = "<group>"; };
+		E44CDA3019F3010400E25B03 /* angel-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel-48.png"; sourceTree = "<group>"; };
+		E44CDA3219F3015300E25B03 /* angel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel-32.png"; sourceTree = "<group>"; };
+		E44CDA3419F3016500E25B03 /* fork_truck-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork_truck-32.png"; sourceTree = "<group>"; };
+		E44CDA3619F3035E00E25B03 /* add_list-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_list-26.png"; sourceTree = "<group>"; };
+		E44CDA3819F3063100E25B03 /* PublishMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishMainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +155,14 @@
 				E41BEFF619ED54E30074E546 /* MapVC.swift */,
 				E4350BBF19EFE321003BE39A /* EventDetailsView.swift */,
 				E41BEFF819ED54E30074E546 /* Main.storyboard */,
+				E44CDA3819F3063100E25B03 /* PublishMainVC.swift */,
 				E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */,
 				E41BEFFB19ED54E30074E546 /* Images.xcassets */,
+				E44CDA3219F3015300E25B03 /* angel-32.png */,
+				E44CDA3619F3035E00E25B03 /* add_list-26.png */,
+				E44CDA3419F3016500E25B03 /* fork_truck-32.png */,
+				E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */,
+				E44CDA3019F3010400E25B03 /* angel-48.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -250,6 +268,11 @@
 				E41BEFFA19ED54E30074E546 /* Main.storyboard in Resources */,
 				E41BEFFF19ED54E30074E546 /* LaunchScreen.xib in Resources */,
 				E41BEFFC19ED54E30074E546 /* Images.xcassets in Resources */,
+				E44CDA3719F3035E00E25B03 /* add_list-26.png in Resources */,
+				E44CDA2F19F2FFE500E25B03 /* fork_truck-48.png in Resources */,
+				E44CDA3519F3016500E25B03 /* fork_truck-32.png in Resources */,
+				E44CDA3319F3015300E25B03 /* angel-32.png in Resources */,
+				E44CDA3119F3010400E25B03 /* angel-48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +293,7 @@
 				E41BEFF719ED54E30074E546 /* MapVC.swift in Sources */,
 				E4350BB419EE3ED2003BE39A /* MDAnnotation.swift in Sources */,
 				E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */,
+				E44CDA3919F3063100E25B03 /* PublishMainVC.swift in Sources */,
 				E4350BB619EE6742003BE39A /* MDModel.swift in Sources */,
 				E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */,
 				E41BEFF519ED54E30074E546 /* AppDelegate.swift in Sources */,
