@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E41BEFF519ED54E30074E546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BEFF419ED54E30074E546 /* AppDelegate.swift */; };
-		E41BEFF719ED54E30074E546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BEFF619ED54E30074E546 /* ViewController.swift */; };
+		E41BEFF719ED54E30074E546 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BEFF619ED54E30074E546 /* MapVC.swift */; };
 		E41BEFFA19ED54E30074E546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFF819ED54E30074E546 /* Main.storyboard */; };
 		E41BEFFC19ED54E30074E546 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFFB19ED54E30074E546 /* Images.xcassets */; };
 		E41BEFFF19ED54E30074E546 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */; };
 		E41BF00B19ED54E30074E546 /* MapViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BF00A19ED54E30074E546 /* MapViewDemoTests.swift */; };
+		E41BF01519ED56DB0074E546 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41BF01419ED56DB0074E546 /* MapKit.framework */; };
+		E41BF01719ED583E0074E546 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41BF01619ED583E0074E546 /* CoreLocation.framework */; };
+		E4350BB419EE3ED2003BE39A /* MDAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB319EE3ED2003BE39A /* MDAnnotation.swift */; };
+		E4350BB619EE6742003BE39A /* MDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB519EE6742003BE39A /* MDModel.swift */; };
+		E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */; };
+		E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */; };
+		E4350BC019EFE321003BE39A /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBF19EFE321003BE39A /* EventDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +36,20 @@
 		E41BEFEF19ED54E30074E546 /* MapViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41BEFF319ED54E30074E546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41BEFF419ED54E30074E546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E41BEFF619ED54E30074E546 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E41BEFF619ED54E30074E546 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E41BEFF919ED54E30074E546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E41BEFFB19ED54E30074E546 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E41BEFFE19ED54E30074E546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E41BF00419ED54E30074E546 /* MapViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41BF00919ED54E30074E546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41BF00A19ED54E30074E546 /* MapViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDemoTests.swift; sourceTree = "<group>"; };
+		E41BF01419ED56DB0074E546 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E41BF01619ED583E0074E546 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E4350BB319EE3ED2003BE39A /* MDAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAnnotation.swift; sourceTree = "<group>"; };
+		E4350BB519EE6742003BE39A /* MDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDModel.swift; sourceTree = "<group>"; };
+		E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDEventsTableVC.swift; sourceTree = "<group>"; };
+		E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		E4350BBF19EFE321003BE39A /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41BF01719ED583E0074E546 /* CoreLocation.framework in Frameworks */,
+				E41BF01519ED56DB0074E546 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +94,16 @@
 			isa = PBXGroup;
 			children = (
 				E41BEFF419ED54E30074E546 /* AppDelegate.swift */,
-				E41BEFF619ED54E30074E546 /* ViewController.swift */,
+				E41BEFF619ED54E30074E546 /* MapVC.swift */,
+				E4350BBF19EFE321003BE39A /* EventDetailsView.swift */,
+				E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */,
+				E4350BB519EE6742003BE39A /* MDModel.swift */,
+				E4350BB319EE3ED2003BE39A /* MDAnnotation.swift */,
+				E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */,
 				E41BEFF819ED54E30074E546 /* Main.storyboard */,
 				E41BEFFB19ED54E30074E546 /* Images.xcassets */,
 				E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */,
+				E4350BC119F14051003BE39A /* Frameworks */,
 				E41BEFF219ED54E30074E546 /* Supporting Files */,
 			);
 			path = MapViewDemo;
@@ -110,6 +132,15 @@
 				E41BF00919ED54E30074E546 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4350BC119F14051003BE39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41BF01419ED56DB0074E546 /* MapKit.framework */,
+				E41BF01619ED583E0074E546 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41BEFF719ED54E30074E546 /* ViewController.swift in Sources */,
+				E41BEFF719ED54E30074E546 /* MapVC.swift in Sources */,
+				E4350BB419EE3ED2003BE39A /* MDAnnotation.swift in Sources */,
+				E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */,
+				E4350BB619EE6742003BE39A /* MDModel.swift in Sources */,
+				E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */,
 				E41BEFF519ED54E30074E546 /* AppDelegate.swift in Sources */,
+				E4350BC019EFE321003BE39A /* EventDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +441,7 @@
 				E41BF01019ED54E30074E546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41BF01119ED54E30074E546 /* Build configuration list for PBXNativeTarget "MapViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +450,7 @@
 				E41BF01319ED54E30074E546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
