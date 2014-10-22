@@ -19,7 +19,7 @@ class MDModel: NSObject, CLLocationManagerDelegate {
     }
 
     let kDistanceFilter = 10.0
-    var annotationsToPresent = [MDAnnotation]()
+    var annotationsToPresent = [MDEvent]()
     let locationManager = CLLocationManager()
     var userLocation = CLLocation()
     
@@ -34,10 +34,10 @@ class MDModel: NSObject, CLLocationManagerDelegate {
         let loc2 = CLLocation(latitude: 32.361233, longitude: 34.867452)
         let loc3 = CLLocation(latitude: 32.381214, longitude: 34.882611)
     
-        let ann1 = MDAnnotation(annLocation: loc1, annTitle: "Guy's house",
+        let ann1 = MDEvent(annLocation: loc1, annTitle: "Guy's house",
         annSubtitle:"beit halevy")
-        let ann2 = MDAnnotation(annLocation: loc2, annTitle: "Coffee Neto", annSubtitle: nil)
-        let ann3 = MDAnnotation (annLocation: loc3, annTitle: "Shabtai Pizza", annSubtitle: nil)
+        let ann2 = MDEvent(annLocation: loc2, annTitle: "Coffee Neto", annSubtitle: nil)
+        let ann3 = MDEvent (annLocation: loc3, annTitle: "Shabtai Pizza", annSubtitle: nil)
        
         annotationsToPresent.append(ann1)
         annotationsToPresent.append(ann2)

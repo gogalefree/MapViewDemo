@@ -12,7 +12,7 @@ class PublishMainVC: UIViewController, UICollectionViewDelegate, UICollectionVie
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var dataSource = [MDAnnotation]()
+    var dataSource = [MDEvent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,19 +9,19 @@
 import UIKit
 
 protocol EventsTableViewDelegate {
-    func didSelectEvent (anEvent: MDAnnotation)
+    func didSelectEvent (anEvent: MDEvent)
 }
 class MDEventsTableVC: UITableViewController {
 
-    var events = [MDAnnotation]()
+    var events = [MDEvent]()
     var delegate: EventsTableViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         events = MDModel.sharedInstance.annotationsToPresent
         events = events.sorted({ (a1, a2) -> Bool in
-            let one : MDAnnotation = a1
-            let two : MDAnnotation = a2
+            let one : MDEvent = a1
+            let two : MDEvent = a2
             return one.distanceFromUserLocation < two.distanceFromUserLocation
         })
     }
@@ -45,8 +45,8 @@ class MDEventsTableVC: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as UITableViewCell
-        let event = self.events[indexPath.row] as MDAnnotation
-        cell.textLabel?.text = event.title
+        let event = self.events[indexPath.row] as MDEvent
+        cell.textLabel.text = event.title
         let km : Int = Int (event.distanceFromUserLocation! / 1000)
         cell.detailTextLabel?.text = event.subtitle + " \(km) km from your location"
         return cell

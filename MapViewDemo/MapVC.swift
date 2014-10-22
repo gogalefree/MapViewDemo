@@ -20,7 +20,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
     let model = MDModel.sharedInstance
     var eventDetailsView : EventDetailsView?
     var eventDetailsViewHidden = true
-    var eventToNavigate : MDAnnotation?
+    var eventToNavigate : MDEvent?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
             self.hideEventDetailsView()
         }
         else {
-            let event = view.annotation as MDAnnotation
+            let event = view.annotation as MDEvent
             self.presentEventDetailsViewForEvent(event)
         }
     }
@@ -67,7 +67,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
             }        
     }
     
-    func presentEventDetailsViewForEvent (anEvent: MDAnnotation) {
+    func presentEventDetailsViewForEvent (anEvent: MDEvent) {
         
         self.eventDetailsView?.setUpWithEvent(anEvent)
         self.eventDetailsViewHidden = false
@@ -127,11 +127,11 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
     }
     
     //called by the eventsDetailView Nav Button via delegate
-    func eventDetailsViewdidRequestNavigationToEvent (anEvent: MDAnnotation) {
+    func eventDetailsViewdidRequestNavigationToEvent (anEvent: MDEvent) {
         
         self.eventToNavigate = anEvent
         
-        if (UIApplication.sharedApplication().canOpenURL(NSURL.URLWithString("waze://"))) {
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"waze://")!)) {
             //show action sheet with waze and apple maps
             
             let actionSheet: UIActionSheet = UIActionSheet(title: "Take me with:", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Waze", "Apple Maps")
@@ -155,16 +155,16 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
         }
     }
     
-    func wazeNavigation(event: MDAnnotation){
+    func wazeNavigation(event: MDEvent){
         
-        if UIApplication.sharedApplication().canOpenURL(NSURL.URLWithString("waze://")){
+        if UIApplication.sharedApplication().canOpenURL(NSURL(string:"waze://")!){
             
             let navString = "waze://?ll=\(event.coordinate.latitude),\(event.coordinate.longitude)&navigate=yes"
-            UIApplication.sharedApplication().openURL(NSURL.URLWithString(navString))
+            UIApplication.sharedApplication().openURL(NSURL(string:"waze://")!)
         }
     }
     
-    func appleMapsNavigation(anEvent: MDAnnotation) {
+    func appleMapsNavigation(anEvent: MDEvent) {
         
         let destinationPM = MKPlacemark(coordinate: anEvent.coordinate, addressDictionary: nil)
         let destinationItem = MKMapItem(placemark: destinationPM)
@@ -182,7 +182,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
 
 
     //called by the eventTableViewVC at didSelectRowAtIndexPath via delegate
-    func didSelectEvent(anEvent: MDAnnotation) {
+    func didSelectEvent(anEvent: MDEvent) {
         self.presentEventDetailsViewForEvent(anEvent)
         let newRegion = MKCoordinateRegion(center: anEvent.coordinate, span: self.mapView.region.span)
         self.mapView.setRegion(newRegion , animated: true)

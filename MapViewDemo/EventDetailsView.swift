@@ -12,19 +12,19 @@ import MapKit
 
 protocol EventDetailsViewDelegate {
     func eventDetailsViewDidDissmiss()
-    func eventDetailsViewdidRequestNavigationToEvent (anEvent: MDAnnotation)
+    func eventDetailsViewdidRequestNavigationToEvent (anEvent: MDEvent)
 }
 
 class EventDetailsView: UIView , UIActionSheetDelegate {
 
-    var event: MDAnnotation?
+    var event: MDEvent?
     var accumaltingHeight : CGFloat = 5
     let labelsMargin: CGFloat = 10
     let labelsOriginX: CGFloat = 10
     var delegate : EventDetailsViewDelegate?
 
     
-    func setUpWithEvent (anEvent: MDAnnotation) {
+    func setUpWithEvent (anEvent: MDEvent) {
 
         self.event = anEvent
         self.backgroundColor = UIColor.whiteColor()

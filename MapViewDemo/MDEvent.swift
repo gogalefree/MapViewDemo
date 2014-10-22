@@ -1,5 +1,5 @@
 //
-//  MDAnnotation.swift
+//  MDEvent.swift
 //  MapViewDemo
 //
 //  Created by Guy Freedman on 10/15/14.
@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MDAnnotation: NSObject , MKAnnotation {
+class MDEvent: NSObject , MKAnnotation {
 
     var coordinate: CLLocationCoordinate2D
     var title: String = ""
