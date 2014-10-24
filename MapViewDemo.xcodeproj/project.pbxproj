@@ -12,7 +12,7 @@
 		E41BEFFA19ED54E30074E546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFF819ED54E30074E546 /* Main.storyboard */; };
 		E41BEFFC19ED54E30074E546 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFFB19ED54E30074E546 /* Images.xcassets */; };
 		E41BEFFF19ED54E30074E546 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */; };
-		E41BF00B19ED54E30074E546 /* MapViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BF00A19ED54E30074E546 /* MapViewDemoTests.swift */; };
+		E41BF00B19ED54E30074E546 /* MDEventInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41BF00A19ED54E30074E546 /* MDEventInitTests.swift */; };
 		E41BF01519ED56DB0074E546 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41BF01419ED56DB0074E546 /* MapKit.framework */; };
 		E41BF01719ED583E0074E546 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41BF01619ED583E0074E546 /* CoreLocation.framework */; };
 		E4350BB419EE3ED2003BE39A /* MDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB319EE3ED2003BE39A /* MDEvent.swift */; };
@@ -20,12 +20,20 @@
 		E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */; };
 		E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */; };
 		E4350BC019EFE321003BE39A /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4350BBF19EFE321003BE39A /* EventDetailsView.swift */; };
+		E447CC0019F7D4C700B19385 /* MDPublishEventMainTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CBFF19F7D4C700B19385 /* MDPublishEventMainTVCExtension.swift */; };
+		E447CC0219F8EF1400B19385 /* MDPublishEventMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CC0119F8EF1400B19385 /* MDPublishEventMainTVC.swift */; };
+		E447CC0419F8F22200B19385 /* add_user-32.png in Resources */ = {isa = PBXBuildFile; fileRef = E447CC0319F8F22200B19385 /* add_user-32.png */; };
+		E447CC0619F8F5A600B19385 /* MDPublishEventTVCellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CC0519F8F5A600B19385 /* MDPublishEventTVCellTextField.swift */; };
+		E447CC0819F91EE000B19385 /* PublishEventTextViewiInputTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CC0719F91EE000B19385 /* PublishEventTextViewiInputTVCell.swift */; };
+		E447CC0A19F96E5E00B19385 /* PublishEventTVCellBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CC0919F96E5E00B19385 /* PublishEventTVCellBase.swift */; };
+		E447CC0C19F9811700B19385 /* MDPublishEventTVCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447CC0B19F9811700B19385 /* MDPublishEventTVCellTextView.swift */; };
 		E44CDA2F19F2FFE500E25B03 /* fork_truck-48.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */; };
 		E44CDA3119F3010400E25B03 /* angel-48.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3019F3010400E25B03 /* angel-48.png */; };
 		E44CDA3319F3015300E25B03 /* angel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3219F3015300E25B03 /* angel-32.png */; };
 		E44CDA3519F3016500E25B03 /* fork_truck-32.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3419F3016500E25B03 /* fork_truck-32.png */; };
 		E44CDA3719F3035E00E25B03 /* add_list-26.png in Resources */ = {isa = PBXBuildFile; fileRef = E44CDA3619F3035E00E25B03 /* add_list-26.png */; };
 		E44CDA3919F3063100E25B03 /* PublishMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CDA3819F3063100E25B03 /* PublishMainVC.swift */; };
+		E4D275A719FA3DF1004B36FA /* MDUserDataInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D275A619FA3DF1004B36FA /* MDUserDataInputVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,7 @@
 		E41BEFFE19ED54E30074E546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E41BF00419ED54E30074E546 /* MapViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41BF00919ED54E30074E546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E41BF00A19ED54E30074E546 /* MapViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDemoTests.swift; sourceTree = "<group>"; };
+		E41BF00A19ED54E30074E546 /* MDEventInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDEventInitTests.swift; sourceTree = "<group>"; };
 		E41BF01419ED56DB0074E546 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E41BF01619ED583E0074E546 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E4350BB319EE3ED2003BE39A /* MDEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDEvent.swift; sourceTree = "<group>"; };
@@ -56,12 +64,20 @@
 		E4350BB719EEAFD7003BE39A /* MDEventsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDEventsTableVC.swift; sourceTree = "<group>"; };
 		E4350BBD19EFDB6E003BE39A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		E4350BBF19EFE321003BE39A /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		E447CBFF19F7D4C700B19385 /* MDPublishEventMainTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPublishEventMainTVCExtension.swift; sourceTree = "<group>"; };
+		E447CC0119F8EF1400B19385 /* MDPublishEventMainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPublishEventMainTVC.swift; sourceTree = "<group>"; };
+		E447CC0319F8F22200B19385 /* add_user-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_user-32.png"; sourceTree = "<group>"; };
+		E447CC0519F8F5A600B19385 /* MDPublishEventTVCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPublishEventTVCellTextField.swift; sourceTree = "<group>"; };
+		E447CC0719F91EE000B19385 /* PublishEventTextViewiInputTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishEventTextViewiInputTVCell.swift; sourceTree = "<group>"; };
+		E447CC0919F96E5E00B19385 /* PublishEventTVCellBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishEventTVCellBase.swift; sourceTree = "<group>"; };
+		E447CC0B19F9811700B19385 /* MDPublishEventTVCellTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPublishEventTVCellTextView.swift; sourceTree = "<group>"; };
 		E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork_truck-48.png"; sourceTree = "<group>"; };
 		E44CDA3019F3010400E25B03 /* angel-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel-48.png"; sourceTree = "<group>"; };
 		E44CDA3219F3015300E25B03 /* angel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angel-32.png"; sourceTree = "<group>"; };
 		E44CDA3419F3016500E25B03 /* fork_truck-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork_truck-32.png"; sourceTree = "<group>"; };
 		E44CDA3619F3035E00E25B03 /* add_list-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_list-26.png"; sourceTree = "<group>"; };
 		E44CDA3819F3063100E25B03 /* PublishMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishMainVC.swift; sourceTree = "<group>"; };
+		E4D275A619FA3DF1004B36FA /* MDUserDataInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDUserDataInputVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +142,7 @@
 		E41BF00719ED54E30074E546 /* MapViewDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				E41BF00A19ED54E30074E546 /* MapViewDemoTests.swift */,
+				E41BF00A19ED54E30074E546 /* MDEventInitTests.swift */,
 				E41BF00819ED54E30074E546 /* Supporting Files */,
 			);
 			path = MapViewDemoTests;
@@ -154,8 +170,15 @@
 			children = (
 				E41BEFF619ED54E30074E546 /* MapVC.swift */,
 				E4350BBF19EFE321003BE39A /* EventDetailsView.swift */,
-				E41BEFF819ED54E30074E546 /* Main.storyboard */,
 				E44CDA3819F3063100E25B03 /* PublishMainVC.swift */,
+				E447CC0119F8EF1400B19385 /* MDPublishEventMainTVC.swift */,
+				E447CBFF19F7D4C700B19385 /* MDPublishEventMainTVCExtension.swift */,
+				E4D275A619FA3DF1004B36FA /* MDUserDataInputVC.swift */,
+				E447CC0919F96E5E00B19385 /* PublishEventTVCellBase.swift */,
+				E447CC0519F8F5A600B19385 /* MDPublishEventTVCellTextField.swift */,
+				E447CC0B19F9811700B19385 /* MDPublishEventTVCellTextView.swift */,
+				E447CC0719F91EE000B19385 /* PublishEventTextViewiInputTVCell.swift */,
+				E41BEFF819ED54E30074E546 /* Main.storyboard */,
 				E41BEFFD19ED54E30074E546 /* LaunchScreen.xib */,
 				E41BEFFB19ED54E30074E546 /* Images.xcassets */,
 				E44CDA3219F3015300E25B03 /* angel-32.png */,
@@ -163,6 +186,7 @@
 				E44CDA3419F3016500E25B03 /* fork_truck-32.png */,
 				E44CDA2E19F2FFE500E25B03 /* fork_truck-48.png */,
 				E44CDA3019F3010400E25B03 /* angel-48.png */,
+				E447CC0319F8F22200B19385 /* add_user-32.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,6 +294,7 @@
 				E41BEFFC19ED54E30074E546 /* Images.xcassets in Resources */,
 				E44CDA3719F3035E00E25B03 /* add_list-26.png in Resources */,
 				E44CDA2F19F2FFE500E25B03 /* fork_truck-48.png in Resources */,
+				E447CC0419F8F22200B19385 /* add_user-32.png in Resources */,
 				E44CDA3519F3016500E25B03 /* fork_truck-32.png in Resources */,
 				E44CDA3319F3015300E25B03 /* angel-32.png in Resources */,
 				E44CDA3119F3010400E25B03 /* angel-48.png in Resources */,
@@ -293,11 +318,18 @@
 				E41BEFF719ED54E30074E546 /* MapVC.swift in Sources */,
 				E4350BB419EE3ED2003BE39A /* MDEvent.swift in Sources */,
 				E4350BB819EEAFD7003BE39A /* MDEventsTableVC.swift in Sources */,
+				E447CC0219F8EF1400B19385 /* MDPublishEventMainTVC.swift in Sources */,
+				E447CC0A19F96E5E00B19385 /* PublishEventTVCellBase.swift in Sources */,
 				E44CDA3919F3063100E25B03 /* PublishMainVC.swift in Sources */,
+				E447CC0819F91EE000B19385 /* PublishEventTextViewiInputTVCell.swift in Sources */,
 				E4350BB619EE6742003BE39A /* MDModel.swift in Sources */,
 				E4350BBE19EFDB6E003BE39A /* UIViewExtensions.swift in Sources */,
+				E447CC0019F7D4C700B19385 /* MDPublishEventMainTVCExtension.swift in Sources */,
 				E41BEFF519ED54E30074E546 /* AppDelegate.swift in Sources */,
+				E447CC0619F8F5A600B19385 /* MDPublishEventTVCellTextField.swift in Sources */,
+				E4D275A719FA3DF1004B36FA /* MDUserDataInputVC.swift in Sources */,
 				E4350BC019EFE321003BE39A /* EventDetailsView.swift in Sources */,
+				E447CC0C19F9811700B19385 /* MDPublishEventTVCellTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41BF00B19ED54E30074E546 /* MapViewDemoTests.swift in Sources */,
+				E41BF00B19ED54E30074E546 /* MDEventInitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +390,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -400,6 +433,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

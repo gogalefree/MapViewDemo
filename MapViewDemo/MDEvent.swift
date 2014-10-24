@@ -10,17 +10,17 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MDEvent: NSObject , MKAnnotation {
+public class MDEvent: NSObject , MKAnnotation {
 
-    var coordinate: CLLocationCoordinate2D
-    var title: String = ""
-    var subtitle: String = ""
-    var distanceFromUserLocation: Double? {
+    public var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    public var title: String = ""
+    public var subtitle: String = ""
+    public var distanceFromUserLocation: Double? {
             let eventLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
             return eventLocation.distanceFromLocation(MDModel.sharedInstance.userLocation)
     }
     
-    init(annLocation: CLLocation, annTitle: String?, annSubtitle: String?) {
+    public init(annLocation: CLLocation, annTitle: String?, annSubtitle: String?) {
         coordinate = annLocation.coordinate
         title = annTitle ?? ""
         subtitle = annSubtitle ?? ""

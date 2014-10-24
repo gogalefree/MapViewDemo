@@ -68,14 +68,16 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
     }
     
     func presentEventDetailsViewForEvent (anEvent: MDEvent) {
-        
-        self.eventDetailsView?.setUpWithEvent(anEvent)
-        self.eventDetailsViewHidden = false
 
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             let topPoint = CGRectGetMaxY(self.navigationController?.navigationBar.frame as CGRect!)
             self.eventDetailsView?.top(topPoint)
-        })
+            }){ (completion: Bool) -> Void in
+                self.eventDetailsView?.setUpWithEvent(anEvent)
+                self.eventDetailsViewHidden = false
+        }
+        
+        
     }
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
