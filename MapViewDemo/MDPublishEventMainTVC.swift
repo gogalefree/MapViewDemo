@@ -99,18 +99,36 @@ class MDPublishEventMainTVC: UITableViewController, UITableViewDataSource, UITab
             
         case 2:
             self.userDataInputVC.state = .TextView
-            
+        case 5:
+            self.userDataInputVC.state = .DatePickerStartingDate
+       
+        case 6:
+            self.userDataInputVC.state = .DatePickerEndingDate
+           
         default:
             break
         }
+    
         self.navController  = UINavigationController(rootViewController: self.userDataInputVC)
         self.presentViewController(navController, animated: true, nil)
+
     }
     
     
     //MDUserDataDelegate
     func didEnterData(inputString: String, forState state:State){
-        
+        self.updateCellData(inputString)
+    }
+    
+    func didPickDate(date: NSDate) {
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        formatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        let dateString = formatter.stringFromDate(date)
+        self.updateCellData(dateString)
+    }
+    
+    func updateCellData (inputString: String) {
         //get the cell and text label
         let cell = self.tableView.cellForRowAtIndexPath(self.selectedIndexPath!) as PublishEventTVCellBase
         let label = cell.textLabel
@@ -129,8 +147,6 @@ class MDPublishEventMainTVC: UITableViewController, UITableViewDataSource, UITab
         //reload cell
         self.tableView.reloadRowsAtIndexPaths([self.selectedIndexPath!], withRowAnimation: .Automatic)
     }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -12,10 +12,11 @@ import UIKit
 protocol MDUserDataInputVCDelegate {
     func didEnterData(inputString: String,
         forState state:State)
+    func didPickDate (date: NSDate)
 }
 
 enum State: Int {
-    case TextField = 0 , TextView = 1
+    case TextField = 0 , TextView = 1, DatePickerStartingDate, DatePickerEndingDate
 }
 
 class MDUserDataInputVC: UIViewController,
@@ -26,6 +27,7 @@ class MDUserDataInputVC: UIViewController,
     
 
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
@@ -53,12 +55,26 @@ class MDUserDataInputVC: UIViewController,
         if self.state == .TextField {
             self.textField.alpha = 1
             self.textView.alpha = 0
+            self.datePicker.alpha = 0
             titleLabel.text = String.localizedStringWithFormat("Event Title", "the title of the event that will be published")
         }
-        else {
+        else if self.state == .TextView {
             self.textView.alpha = 1
             self.textField.alpha = 0
+            self.datePicker.alpha = 0
             titleLabel.text = String.localizedStringWithFormat("Event Description", "the description of the event that will be published")
+        }
+        
+        else {
+            self.datePicker.alpha = 1
+            self.textField.alpha = 0
+            self.textView.alpha = 0
+            if self.state == .DatePickerStartingDate{
+            self.titleLabel.text = String.localizedStringWithFormat("Event starting date", "starting date title")
+            }
+            else{
+                 self.titleLabel.text = String.localizedStringWithFormat("Event endnig date", "starting date title")
+            }
         }
     }
     
@@ -76,17 +92,22 @@ class MDUserDataInputVC: UIViewController,
     }
     
     func doneButtonAction () {
+        if ((self.state != .DatePickerStartingDate) &&
+            (self.state != .DatePickerEndingDate)){
         //save data
         self.inputString = self.stringFromInputView()
+        
+        //pass it to the delegate
+        self.delegate.didEnterData(self.inputString, forState: self.state)
+        }
+        else {
+        self.delegate.didPickDate(self.datePicker.date)
+        }
         
         //dissmiss
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
-        
-        //pass it to the delegate
-        self.delegate.didEnterData(self.inputString, forState: self.state)
-        
         
     }
     
