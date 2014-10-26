@@ -13,17 +13,28 @@ class PublishMainVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     @IBOutlet weak var collectionView: UICollectionView!
     
     var dataSource = [MDEvent]()
+    var needsUpdate = false
+    var newEventPublished: MDEvent?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      
         self.title = "Shares"
         dataSource = MDModel.sharedInstance.annotationsToPresent
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if self.needsUpdate {
+            self.dataSource.insert(self.newEventPublished!, atIndex: 0)
+            self.collectionView.insertItemsAtIndexPaths([NSIndexPath(forItem: 0, inSection: 0)])
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

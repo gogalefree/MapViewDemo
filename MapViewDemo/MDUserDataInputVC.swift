@@ -13,10 +13,12 @@ protocol MDUserDataInputVCDelegate {
     func didEnterData(inputString: String,
         forState state:State)
     func didPickDate (date: NSDate)
+    func didPickTypeOfCollecting (theTypeOfCollecting: TypeOfCollecting, withContactInfo infoString: String?)
 }
 
+
 enum State: Int {
-    case TextField = 0 , TextView = 1, DatePickerStartingDate, DatePickerEndingDate
+    case TextField = 0 , TextView = 1, DatePickerStartingDate, DatePickerEndingDate, PickTypeOfCollecting
 }
 
 class MDUserDataInputVC: UIViewController,
@@ -31,10 +33,12 @@ class MDUserDataInputVC: UIViewController,
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var segmentedControll: UISegmentedControl!
     
     var inputString: String = ""
     var state: State = .TextField
     var delegate: MDUserDataInputVCDelegate!
+    var userDidEnterContactInfo = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,28 +51,40 @@ class MDUserDataInputVC: UIViewController,
         
         self.textField.delegate = self
         self.textView.delegate = self
+        self.setUpSegmentedController()
 
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
         if self.state == .TextField {
             self.textField.alpha = 1
             self.textView.alpha = 0
             self.datePicker.alpha = 0
+            self.segmentedControll.alpha = 0
             titleLabel.text = String.localizedStringWithFormat("Event Title", "the title of the event that will be published")
         }
         else if self.state == .TextView {
             self.textView.alpha = 1
             self.textField.alpha = 0
             self.datePicker.alpha = 0
+            self.segmentedControll.alpha = 0
             titleLabel.text = String.localizedStringWithFormat("Event Description", "the description of the event that will be published")
         }
         
+        else if self.state == .PickTypeOfCollecting {
+            self.segmentedControll.alpha = 1
+            self.textView.alpha = 0
+            self.textField.alpha = 0
+            self.datePicker.alpha = 0
+            titleLabel.text = String.localizedStringWithFormat("Pickup Method", "the Pickup Method of the event that will be published")
+        }
         else {
             self.datePicker.alpha = 1
             self.textField.alpha = 0
             self.textView.alpha = 0
+            self.segmentedControll.alpha = 0
             if self.state == .DatePickerStartingDate{
             self.titleLabel.text = String.localizedStringWithFormat("Event starting date", "starting date title")
             }
@@ -84,30 +100,56 @@ class MDUserDataInputVC: UIViewController,
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             if self.state == State.TextField {
                 self.textField.becomeFirstResponder()
+                println("text field")
             }
-            else {
+            else if self.state != .PickTypeOfCollecting {
                 self.textView.becomeFirstResponder()
+                println("text view")
+
             }
         })
     }
     
     func doneButtonAction () {
-        if ((self.state != .DatePickerStartingDate) &&
-            (self.state != .DatePickerEndingDate)){
-        //save data
-        self.inputString = self.stringFromInputView()
+
+        if self.state == .PickTypeOfCollecting {
+
+            let theTypeOfCollecting = TypeOfCollecting(rawValue: self.segmentedControll.selectedSegmentIndex)
+
+            if theTypeOfCollecting! == .FreePickup {
+                
+                self.delegate.didPickTypeOfCollecting(theTypeOfCollecting!, withContactInfo: nil)
+            }
+                
+            else if !self.userDidEnterContactInfo {
+                
+                //contact publisher. user must supply phone number of e-mail
+                return
+            }
+            
+            else {
+                self.inputString = self.textField.text
+                if self.textField.text == "" {return}
+                self.hideContactInfoUI()
+                self.delegate.didPickTypeOfCollecting(theTypeOfCollecting!, withContactInfo: inputString)
+                self.userDidEnterContactInfo = false
+            }
+        }
+            
+        else if ((self.state != .DatePickerStartingDate) &&
+                (self.state != .DatePickerEndingDate)){
+                    //save data
+                    self.inputString = self.stringFromInputView()
         
-        //pass it to the delegate
-        self.delegate.didEnterData(self.inputString, forState: self.state)
+                    //pass it to the delegate
+                    self.delegate.didEnterData(self.inputString, forState: self.state)
         }
         else {
-        self.delegate.didPickDate(self.datePicker.date)
+            self.delegate.didPickDate(self.datePicker.date)
         }
         
         //dissmiss
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
-            
-        })
+        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
@@ -124,10 +166,10 @@ class MDUserDataInputVC: UIViewController,
     func stringFromInputView() -> String {
         
         if self.state == .TextField {
-        return self.textField.text
+            return self.textField.text
         }
         else if self.state == .TextView {
-         return self.textView.text
+            return self.textView.text
         }
         return ""
     }
@@ -145,6 +187,58 @@ class MDUserDataInputVC: UIViewController,
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         let count = countElements(textView.text) + countElements(text) - range.length
         return count < textViewMaxLength
+    }
+
+    func presentContactInfoUI() {
+
+        self.userDidEnterContactInfo = true
+        self.textField.text = ""
+        self.textField.placeholder = "Enter Email or Phone number"
+        let origin: CGFloat = CGRectGetMaxY(self.segmentedControll.frame) + 25
+
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+
+            self.textField.bounds.size.width = 250
+            self.textField.top(origin)
+            self.textField.left(self.segmentedControll.frame.origin.x)
+            self.textField.alpha = 1
+
+            }) { (completion) -> Void in
+                if completion {
+                    self.textField.becomeFirstResponder()
+                }
+        }
+    }
+    
+    func hideContactInfoUI() {
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.textField.alpha = 0
+            self.textField.bounds.size.width = 300
+            self.textField.top(CGRectGetMinY(self.textView.frame))
+            self.textField.text = ""
+            self.textField.placeholder = ""
+            self.textField.left(10)
+        })
+    }
+    
+    func setUpSegmentedController() {
+        
+        let freePickUpTitle = String.localizedStringWithFormat("Free Pickup", "the title of a button. means that everyone can come to pick up the food without contacting the pubkisher")
+        let contactPublisher = String.localizedStringWithFormat("Contact Publisher", "the title of a button. means that a collector must contact the publisher")
+        self.segmentedControll.setTitle(freePickUpTitle, forSegmentAtIndex: 0)
+        self.segmentedControll.setTitle(contactPublisher, forSegmentAtIndex: 1)
+        self.segmentedControll.addTarget(self, action: "segmentedControllerTouched", forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func segmentedControllerTouched() {
+        
+        if segmentedControll.selectedSegmentIndex == 1 {
+            self.presentContactInfoUI()
+
+        }
+        else {
+            self.hideContactInfoUI()
+        }
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {

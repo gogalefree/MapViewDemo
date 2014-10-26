@@ -18,8 +18,15 @@ extension MDPublishEventMainTVC {
             
             let addString = String.localizedStringWithFormat("Add ", "the prefix to add photo, add title etc.")
             let titile = addString + self.titleForHeaderAtIndexPath(index)
-            self.dataSource.append(cellData(initialTitle: titile, userData: "", height: initialCellHeight))
+            
+            //photo, description and publish button are not obligatory data
+            if index == 0 || index == 2 || index == 7 {
+                self.dataSource.append(cellData(initialTitle: titile, userData: "", height: initialCellHeight, containsUserData: false, isObligatory: false))
             }
+            else {
+                self.dataSource.append(cellData(initialTitle: titile, userData: "", height: initialCellHeight, containsUserData: false, isObligatory: true))
+            }
+        }
     }
     
     func titleForHeaderAtIndexPath (index: Int) -> String {

@@ -10,6 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
+enum TypeOfCollecting: Int{
+    case FreePickup = 0, ContactPublisher = 1
+}
+
 public class MDEvent: NSObject , MKAnnotation {
 
     public var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
@@ -19,6 +23,12 @@ public class MDEvent: NSObject , MKAnnotation {
             let eventLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
             return eventLocation.distanceFromLocation(MDModel.sharedInstance.userLocation)
     }
+        var eventAddress = ""
+        var startingDate = ""
+        var endingDate = ""
+        var photo: UIImage = UIImage()
+        var theTypeOfCollecting = TypeOfCollecting.FreePickup
+    
     
     public init(annLocation: CLLocation, annTitle: String?, annSubtitle: String?) {
         coordinate = annLocation.coordinate
