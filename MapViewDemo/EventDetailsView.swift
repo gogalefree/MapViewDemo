@@ -53,7 +53,7 @@ class EventDetailsView: UIView , UIActionSheetDelegate {
         
         let distanceLabel = UILabel(frame: self.bounds)
         let km : Int = Int (anEvent.distanceFromUserLocation! / 1000)
-        distanceLabel.text = anEvent.subtitle + " \(km) km from your location"
+        distanceLabel.text = anEvent.subtitle + NSLocalizedString(" \(km) km from your location", comment: "Distance from current position to location point in kilometers.")
         distanceLabel.font = UIFont.systemFontOfSize(16)
         distanceLabel.textAlignment = NSTextAlignment.Left
         distanceLabel.numberOfLines = 0

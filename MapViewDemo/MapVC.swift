@@ -25,7 +25,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
-        self.title = "Collect"
+        self.title = NSLocalizedString("Collect", comment: "Title for Map view")
     }
     
     func setUp() {
@@ -136,7 +136,7 @@ class MapVC: UIViewController, MKMapViewDelegate, EventDetailsViewDelegate, Even
         if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"waze://")!)) {
             //show action sheet with waze and apple maps
             
-            let actionSheet: UIActionSheet = UIActionSheet(title: "Take me with:", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Waze", "Apple Maps")
+            let actionSheet: UIActionSheet = UIActionSheet(title: NSLocalizedString("Take me with:", comment: "Asks the user to select his preferred navigation app"), delegate: self, cancelButtonTitle: NSLocalizedString("Cancel", comment: "Cancel button"), destructiveButtonTitle: nil, otherButtonTitles: "Waze", "Apple Maps")
             
             actionSheet.showInView(self.view)
         }

@@ -34,10 +34,9 @@ class MDModel: NSObject, CLLocationManagerDelegate {
         let loc2 = CLLocation(latitude: 32.361233, longitude: 34.867452)
         let loc3 = CLLocation(latitude: 32.381214, longitude: 34.882611)
     
-        let ann1 = MDEvent(annLocation: loc1, annTitle: "Guy's house",
-        annSubtitle:"beit halevy")
-        let ann2 = MDEvent(annLocation: loc2, annTitle: "Coffee Neto", annSubtitle: nil)
-        let ann3 = MDEvent (annLocation: loc3, annTitle: "Shabtai Pizza", annSubtitle: nil)
+        let ann1 = MDEvent(annLocation: loc1, annTitle: NSLocalizedString("Guy's house", comment: "Map annotation title"), annSubtitle:NSLocalizedString("beit halevy", comment: "Map annotation subtitle"))
+        let ann2 = MDEvent(annLocation: loc2, annTitle: NSLocalizedString("Coffee Neto", comment: "Map annotation title"), annSubtitle: nil)
+        let ann3 = MDEvent (annLocation: loc3, annTitle: NSLocalizedString("Shabtai Pizza", comment: "Map annotation title"), annSubtitle: nil)
        
         annotationsToPresent.append(ann1)
         annotationsToPresent.append(ann2)

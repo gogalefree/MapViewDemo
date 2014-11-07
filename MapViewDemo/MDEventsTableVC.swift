@@ -48,7 +48,7 @@ class MDEventsTableVC: UITableViewController {
         let event = self.events[indexPath.row] as MDEvent
         cell.textLabel.text = event.title
         let km : Int = Int (event.distanceFromUserLocation! / 1000)
-        cell.detailTextLabel?.text = event.subtitle + " \(km) km from your location"
+        cell.detailTextLabel?.text = event.subtitle + NSLocalizedString(" \(km) km from your location", comment: "Distance from current position to location point in kilometers.")
         return cell
     }
     

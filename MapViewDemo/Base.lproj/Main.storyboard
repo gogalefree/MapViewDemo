@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gmm-mW-8hV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--MapVC-->
@@ -118,7 +119,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y5h-KA-kW4">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y5h-KA-kW4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WmA-wu-mAH">
@@ -135,10 +136,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angel-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-Mi-S7C">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angel-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-Mi-S7C">
                                                     <rect key="frame" x="10" y="25" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="KVb-SY-aSg"/>
+                                                        <constraint firstAttribute="height" constant="32" id="j9P-PB-iWL"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA6-tG-sET">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA6-tG-sET">
                                                     <rect key="frame" x="251" y="30" width="22" height="22"/>
                                                     <state key="normal">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +152,13 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="backgroundColor" red="0.71174349059999997" green="1" blue="0.54481240639999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jkv-Mi-S7C" firstAttribute="centerY" secondItem="aA6-tG-sET" secondAttribute="centerY" id="KNB-Vx-66H"/>
+                                            <constraint firstItem="jkv-Mi-S7C" firstAttribute="top" secondItem="reQ-Bz-rMl" secondAttribute="topMargin" constant="17" id="Rva-f7-QGf"/>
+                                            <constraint firstItem="jkv-Mi-S7C" firstAttribute="leading" secondItem="reQ-Bz-rMl" secondAttribute="leadingMargin" constant="2" id="jy6-D1-whc"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="aA6-tG-sET" secondAttribute="trailing" constant="19" id="pQ2-qX-w0T"/>
+                                        </constraints>
                                         <size key="customSize" width="300" height="88"/>
                                     </collectionViewCell>
                                 </cells>
@@ -162,6 +173,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y5h-KA-kW4" secondAttribute="trailing" id="9NZ-M3-im0"/>
+                            <constraint firstAttribute="bottom" secondItem="Y5h-KA-kW4" secondAttribute="bottom" id="XaY-PV-3oY"/>
+                            <constraint firstItem="Y5h-KA-kW4" firstAttribute="top" secondItem="7Tl-K5-biA" secondAttribute="top" id="XcD-IT-Ts4"/>
+                            <constraint firstItem="Y5h-KA-kW4" firstAttribute="leading" secondItem="7Tl-K5-biA" secondAttribute="leading" id="YoG-fg-hxS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bbt-d0-fxe">
                         <barButtonItem key="rightBarButtonItem" image="add_list-26.png" id="tVz-MC-aOb">
