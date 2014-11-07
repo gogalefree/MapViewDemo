@@ -1,0 +1,30 @@
+/* Class = "IBUIViewController"; title = "Shares"; ObjectID = "0se-5x-BA1"; */
+"0se-5x-BA1.title" = "שיתופים";
+
+/* Class = "IBUITabBarItem"; title = "Share"; ObjectID = "6ml-ck-bco"; */
+"6ml-ck-bco.title" = "שיתוף";
+
+/* Class = "IBUITabBarItem"; title = "Collect"; ObjectID = "AK5-5l-14Y"; */
+"AK5-5l-14Y.title" = "איסוף";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "DLu-K8-Ebu"; */
+"DLu-K8-Ebu.text" = "כותרת משנה";
+
+/* Class = "IBUIBarButtonItem"; title = "Show Table"; ObjectID = "Wup-5m-Cmx"; */
+"Wup-5m-Cmx.title" = "הצג טבלה";
+
+/* Class = "IBUIBarButtonItem"; title = "Done"; ObjectID = "WvI-wa-HDc"; */
+"WvI-wa-HDc.title" = "בצע";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "a9J-b2-IfA"; */
+"a9J-b2-IfA.text" = "כותרת";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "aQP-ya-eVu"; */
+"aQP-ya-eVu.text" = "שדה טקסט";
+
+/* Class = "IBUITabBarController"; title = "Foof Chain IL"; ObjectID = "gmm-mW-8hV"; */
+"gmm-mW-8hV.title" = "Foof Chain IL";
+
+/* Class = "IBUINavigationController"; title = "Collect"; ObjectID = "jPB-T2-WnI"; */
+"jPB-T2-WnI.title" = "איסוף";
+

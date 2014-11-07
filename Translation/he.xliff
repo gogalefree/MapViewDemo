@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="MapViewDemo/Base.lproj/LaunchScreen.xib" source-language="en" datatype="plaintext">
+  <file original="MapViewDemo/Base.lproj/LaunchScreen.xib" source-language="en" target-language="he" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
     </header>
     <body>
       <trans-unit id="8ie-xW-0ye.text">
         <source>  Copyright (c) 2014 Guy Freeman. All rights reserved.</source>
+    	<target>  Copyright (c) 2014 Guy Freeman. All rights reserved.</target>
         <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 Guy Freeman. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
       </trans-unit>
       <trans-unit id="kId-c2-rCX.text">
         <source>UPP PROJECT</source>
+        <target>UPP PROJECT</target>
         <note>Class = "IBUILabel"; text = "UPP PROJECT"; ObjectID = "kId-c2-rCX";</note>
       </trans-unit>
     </body>
   </file>
-  <file original="MapViewDemo/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+  <file original="MapViewDemo/Base.lproj/Main.storyboard" source-language="en" target-language="he" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
     </header>
@@ -72,7 +74,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="MapViewDemo/Info.plist" source-language="en" datatype="plaintext">
+  <file original="MapViewDemo/Info.plist" source-language="en" target-language="he" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
     </header>
@@ -91,7 +93,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="MapViewDemo/Localizable.strings" source-language="en" datatype="plaintext">
+  <file original="MapViewDemo/Localizable.strings" source-language="en" target-language="he" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
     </header>
@@ -138,7 +140,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="MapViewDemoTests/Info.plist" source-language="en" datatype="plaintext">
+  <file original="MapViewDemoTests/Info.plist" source-language="en" target-language="he" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
     </header>

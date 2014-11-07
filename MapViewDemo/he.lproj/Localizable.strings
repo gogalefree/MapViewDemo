@@ -1,0 +1,24 @@
+/* Distance from current position to location point in kilometers. */
+" \(km) km from your location" = "קילומטרים ממיקומך הנוכחי \(km)";
+
+/* Cancel button */
+"Cancel" = "ביטול";
+
+/* Map annotation title */
+"Coffee Neto" = "קפה נטו";
+
+/* Title for Map view */
+"Collect" = "איסוף";
+
+/* Map annotation title */
+"Guy's house" = "הבית של גיא";
+
+/* Map annotation title */
+"Shabtai Pizza" = "שבטאי פיצה";
+
+/* Asks the user to select his preferred navigation app */
+"Take me with:" = "נווט בעזרת:";
+
+/* Map annotation subtitle */
+"beit halevy" = "בית הלוי";
+
