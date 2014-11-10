@@ -53,7 +53,9 @@ class EventDetailsView: UIView , UIActionSheetDelegate {
         
         let distanceLabel = UILabel(frame: self.bounds)
         let km : Int = Int (anEvent.distanceFromUserLocation! / 1000)
-        distanceLabel.text = anEvent.subtitle + NSLocalizedString(" \(km) km from your location", comment: "Distance from current position to location point in kilometers.")
+        // Localized String
+
+        distanceLabel.text = anEvent.subtitle + String(format: NSLocalizedString(" %d km from your location", comment: "Distance from current position to location point in kilometers."), km)
         distanceLabel.font = UIFont.systemFontOfSize(16)
         distanceLabel.textAlignment = NSTextAlignment.Left
         distanceLabel.numberOfLines = 0
@@ -66,7 +68,8 @@ class EventDetailsView: UIView , UIActionSheetDelegate {
         let navigateButton: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
         navigateButton.frame = CGRectMake(labelsOriginX, accumaltingHeight + labelsMargin, 55, 55)
         navigateButton.addTarget(self, action: "navigateButtonAction" , forControlEvents: UIControlEvents.TouchUpInside)
-        navigateButton.setTitle("Nav", forState: .Normal)
+        // Localized String
+        navigateButton.setTitle(NSLocalizedString("Nav", comment: "Nav button"), forState: .Normal)
         navigateButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
         navigateButton.layer.cornerRadius = CGRectGetWidth(navigateButton.frame) / 2
         navigateButton.layer.borderWidth = 1
@@ -78,7 +81,8 @@ class EventDetailsView: UIView , UIActionSheetDelegate {
         let dissmissButton: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
         dissmissButton.frame = CGRectMake(labelsOriginX, accumaltingHeight + labelsMargin, 55, 55)
         dissmissButton.addTarget(self, action: "cancelButtonAction" , forControlEvents: UIControlEvents.TouchUpInside)
-        dissmissButton.setTitle("Cancel", forState: .Normal)
+        // Localized String
+        dissmissButton.setTitle(NSLocalizedString("Cancel", comment: "Cancel button"), forState: .Normal)
         dissmissButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
         dissmissButton.layer.cornerRadius = CGRectGetWidth(navigateButton.frame) / 2
         dissmissButton.layer.borderWidth = 1
@@ -90,7 +94,8 @@ class EventDetailsView: UIView , UIActionSheetDelegate {
         let orderButton: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
         orderButton.frame = CGRectMake(labelsOriginX, accumaltingHeight + labelsMargin, 55, 55)
         orderButton.addTarget(self, action: "orderButtonAction" , forControlEvents: UIControlEvents.TouchUpInside)
-        orderButton.setTitle("Order", forState: .Normal)
+        // Localized String
+        orderButton.setTitle(NSLocalizedString("Order", comment: "Order button"), forState: .Normal)
         orderButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
         orderButton.layer.cornerRadius = CGRectGetWidth(navigateButton.frame) / 2
         orderButton.layer.borderWidth = 1

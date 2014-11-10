@@ -43,7 +43,8 @@ class MDUserDataInputVC: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = ""
-        let title = String.localizedStringWithFormat("Done","done button title")
+        // Localized String
+        let title = NSLocalizedString("Done",comment: "done button title")
         
         let rightButton = UIBarButtonItem(title: title, style: UIBarButtonItemStyle.Done, target: self, action: "doneButtonAction")
         self.navigationItem.rightBarButtonItem = rightButton
@@ -63,14 +64,16 @@ class MDUserDataInputVC: UIViewController,
             self.textView.alpha = 0
             self.datePicker.alpha = 0
             self.segmentedControll.alpha = 0
-            titleLabel.text = String.localizedStringWithFormat("Event Title", "the title of the event that will be published")
+            // Localized String
+            titleLabel.text = NSLocalizedString("Event Title", comment: "the title of the event that will be published")
         }
         else if self.state == .TextView {
             self.textView.alpha = 1
             self.textField.alpha = 0
             self.datePicker.alpha = 0
             self.segmentedControll.alpha = 0
-            titleLabel.text = String.localizedStringWithFormat("Event Description", "the description of the event that will be published")
+            // Localized String
+            titleLabel.text = NSLocalizedString("Event Description", comment: "the description of the event that will be published")
         }
         
         else if self.state == .PickTypeOfCollecting {
@@ -78,7 +81,8 @@ class MDUserDataInputVC: UIViewController,
             self.textView.alpha = 0
             self.textField.alpha = 0
             self.datePicker.alpha = 0
-            titleLabel.text = String.localizedStringWithFormat("Pickup Method", "the Pickup Method of the event that will be published")
+            // Localized String
+            titleLabel.text = NSLocalizedString("Pickup Method", comment: "the Pickup Method of the event that will be published")
         }
         else {
             self.datePicker.alpha = 1
@@ -86,10 +90,12 @@ class MDUserDataInputVC: UIViewController,
             self.textView.alpha = 0
             self.segmentedControll.alpha = 0
             if self.state == .DatePickerStartingDate{
-            self.titleLabel.text = String.localizedStringWithFormat("Event starting date", "starting date title")
+                // Localized String
+            self.titleLabel.text = NSLocalizedString("Event starting date", comment: "starting date title")
             }
             else{
-                 self.titleLabel.text = String.localizedStringWithFormat("Event endnig date", "starting date title")
+                // Localized String
+                 self.titleLabel.text = NSLocalizedString("Event endnig date", comment: "starting date title")
             }
         }
     }
@@ -223,8 +229,10 @@ class MDUserDataInputVC: UIViewController,
     
     func setUpSegmentedController() {
         
-        let freePickUpTitle = String.localizedStringWithFormat("Free Pickup", "the title of a button. means that everyone can come to pick up the food without contacting the pubkisher")
-        let contactPublisher = String.localizedStringWithFormat("Contact Publisher", "the title of a button. means that a collector must contact the publisher")
+        // Localized String
+        let freePickUpTitle = NSLocalizedString("Free Pickup", comment: "the title of a button. means that everyone can come to pick up the food without contacting the pubkisher")
+        // Localized String
+        let contactPublisher = NSLocalizedString("Contact Publisher", comment: "the title of a button. means that a collector must contact the publisher")
         self.segmentedControll.setTitle(freePickUpTitle, forSegmentAtIndex: 0)
         self.segmentedControll.setTitle(contactPublisher, forSegmentAtIndex: 1)
         self.segmentedControll.addTarget(self, action: "segmentedControllerTouched", forControlEvents: UIControlEvents.ValueChanged)

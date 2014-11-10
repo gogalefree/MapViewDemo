@@ -52,9 +52,9 @@
 /* Begin PBXFileReference section */
 		A1F225D61A0D47A800DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1F225D81A0D47A800DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A1F225D91A0D47A800DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 		A1F225DD1A0D47A800DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1F225E21A0D47A900DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1F225E51A10A12400DA7B70 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 		E41BEFEF19ED54E30074E546 /* MapViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41BEFF319ED54E30074E546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41BEFF419ED54E30074E546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -394,7 +394,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E41BEFF919ED54E30074E546 /* Base */,
-				A1F225D91A0D47A800DA7B70 /* he */,
+				A1F225E51A10A12400DA7B70 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

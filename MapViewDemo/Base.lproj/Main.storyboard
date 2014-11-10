@@ -50,7 +50,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="eventsTableVC" id="Blb-Ux-Y6s" customClass="MDEventsTableVC" customModule="MapViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Ks-su-FhM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -81,7 +81,6 @@
                             <outlet property="delegate" destination="Blb-Ux-Y6s" id="hre-zG-wAW"/>
                         </connections>
                     </tableView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nR-zs-IIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +151,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.71174349059999997" green="1" blue="0.54481240639999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.97165398848684226" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="jkv-Mi-S7C" firstAttribute="centerY" secondItem="aA6-tG-sET" secondAttribute="centerY" id="KNB-Vx-66H"/>
                                             <constraint firstItem="jkv-Mi-S7C" firstAttribute="top" secondItem="reQ-Bz-rMl" secondAttribute="topMargin" constant="17" id="Rva-f7-QGf"/>

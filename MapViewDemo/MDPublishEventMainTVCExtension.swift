@@ -16,7 +16,8 @@ extension MDPublishEventMainTVC {
     func prepareInitialData () {
         for index in 0...7 {
             
-            let addString = String.localizedStringWithFormat("Add ", "the prefix to add photo, add title etc.")
+            // Localized String
+            let addString = NSLocalizedString("Add ", comment: "The prefix to add photo, add title etc.")
             let titile = addString + self.titleForHeaderAtIndexPath(index)
             
             //photo, description and publish button are not obligatory data
@@ -36,21 +37,29 @@ extension MDPublishEventMainTVC {
         switch index {
         
         case 0:
-            title = String.localizedStringWithFormat("Photo", "add photo collection view header title")
+            // Localized String
+            title = NSLocalizedString("Photo", comment: "Add photo collection view header title")
         case 1:
-            title = String.localizedStringWithFormat("Title", "add Title collection view header")
+            // Localized String
+            title = NSLocalizedString("Title", comment: "Add Title collection view header")
         case 2:
-            title = String.localizedStringWithFormat("Description", "add Description collection view header")
+            // Localized String
+            title = NSLocalizedString("Description", comment: "Add Description collection view header")
         case 3:
-            title = String.localizedStringWithFormat("Address", "add address collection view header")
+            // Localized String
+            title = NSLocalizedString("Address", comment: "Add address collection view header")
         case 4:
-            title = String.localizedStringWithFormat("Type Of Collection", "the type of collecting collection view header")
+            // Localized String
+            title = NSLocalizedString("Type Of Collection", comment:"The type of collecting collection view header")
         case 5:
-            title = String.localizedStringWithFormat("Starting Date", "collection view header")
+            // Localized String
+            title = NSLocalizedString("Starting Date", comment: "Collection view header")
         case 6:
-            title = String.localizedStringWithFormat("ending Date", "add Title collection view header")
+            // Localized String
+            title = NSLocalizedString("ending Date", comment: "Add Title collection view header")
         case 7:
-            title = String.localizedStringWithFormat("Publish", "publish the event to the server")
+            // Localized String
+            title = NSLocalizedString("Publish", comment: "Publish the event to the server")
         default:
             title = ""
         }

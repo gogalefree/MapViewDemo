@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="MapViewDemo/Base.lproj/LaunchScreen.xib" source-language="en" datatype="plaintext" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="8ie-xW-0ye.text">
+        <source>  Copyright (c) 2014 Guy Freeman. All rights reserved.</source>
+        <target>  Copyright (c) 2014 Guy Freeman. All rights reserved.</target>
+        <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 Guy Freeman. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
+      </trans-unit>
+      <trans-unit id="kId-c2-rCX.text">
+        <source>UPP PROJECT</source>
+        <target>UPP PROJECT</target>
+        <note>Class = "IBUILabel"; text = "UPP PROJECT"; ObjectID = "kId-c2-rCX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="MapViewDemo/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="0se-5x-BA1.title">
+        <source>Shares</source>
+        <target>שיתופים</target>
+        <note>Class = "IBUIViewController"; title = "Shares"; ObjectID = "0se-5x-BA1";</note>
+      </trans-unit>
+      <trans-unit id="6ml-ck-bco.title">
+        <source>Share</source>
+        <target>שיתוף</target>
+        <note>Class = "IBUITabBarItem"; title = "Share"; ObjectID = "6ml-ck-bco";</note>
+      </trans-unit>
+      <trans-unit id="AK5-5l-14Y.title">
+        <source>Collect</source>
+        <target>איסוף</target>
+        <note>Class = "IBUITabBarItem"; title = "Collect"; ObjectID = "AK5-5l-14Y";</note>
+      </trans-unit>
+      <trans-unit id="DLu-K8-Ebu.text">
+        <source>Subtitle</source>
+        <target>כותרת משנה</target>
+        <note>Class = "IBUILabel"; text = "Subtitle"; ObjectID = "DLu-K8-Ebu";</note>
+      </trans-unit>
+      <trans-unit id="Wup-5m-Cmx.title">
+        <source>Show Table</source>
+        <target>הצג טבלה</target>
+        <note>Class = "IBUIBarButtonItem"; title = "Show Table"; ObjectID = "Wup-5m-Cmx";</note>
+      </trans-unit>
+      <trans-unit id="WvI-wa-HDc.title">
+        <source>Done</source>
+        <target>בצע</target>
+        <note>Class = "IBUIBarButtonItem"; title = "Done"; ObjectID = "WvI-wa-HDc";</note>
+      </trans-unit>
+      <trans-unit id="a9J-b2-IfA.text">
+        <source>Title</source>
+        <target>כותרת</target>
+        <note>Class = "IBUILabel"; text = "Title"; ObjectID = "a9J-b2-IfA";</note>
+      </trans-unit>
+      <trans-unit id="aQP-ya-eVu.text">
+        <source>Label</source>
+        <target>שדה טקסט</target>
+        <note>Class = "IBUILabel"; text = "Label"; ObjectID = "aQP-ya-eVu";</note>
+      </trans-unit>
+      <trans-unit id="gmm-mW-8hV.title">
+        <source>Foof Chain IL</source>
+        <target>Foof Chain IL</target>
+        <note>Class = "IBUITabBarController"; title = "Foof Chain IL"; ObjectID = "gmm-mW-8hV";</note>
+      </trans-unit>
+      <trans-unit id="jPB-T2-WnI.title">
+        <source>Collect</source>
+        <target>איסוף</target>
+        <note>Class = "IBUINavigationController"; title = "Collect"; ObjectID = "jPB-T2-WnI";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="MapViewDemo/Info.plist" source-language="en" datatype="plaintext" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>MapDemo</source>
+        <target>MapDemo</target>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <target>$(PRODUCT_NAME)</target>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+        <target>1.0</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="MapViewDemo/Localizable.strings" source-language="en" datatype="plaintext" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id=" \(km) km from your location">
+        <source> \(km) km from your location</source>
+        <target>קילומטרים ממיקומך הנוכחי \(km)</target>
+        <note>Distance from current position to location point in kilometers.</note>
+      </trans-unit>
+      <trans-unit id=" \(km) km from your location ">
+        <source> \(km) km from your location </source>
+        <target>קילומטרים ממיקומך הנוכחי \(km)</target>
+        <note>Distance from current position to location point in kilometers.</note>
+      </trans-unit>
+      <trans-unit id="111 km from your location ">
+        <source>111 km from your location </source>
+        <target>קילומטרים ממיקומך הנוכחי 111</target>
+        <note>Distance from current position to location point in kilometers.</note>
+      </trans-unit>
+      <trans-unit id="222 km from your location">
+        <source>222 km from your location</source>
+        <target>קילומטרים ממיקומך הנוכחי 222</target>
+        <note>Distance from current position to location point in kilometers.</note>
+      </trans-unit>
+      <trans-unit id="Add ">
+        <source>Add </source>
+        <target>הוספה </target>
+        <note>The prefix to add photo, add title etc.</note>
+      </trans-unit>
+      <trans-unit id="Address">
+        <source>Address</source>
+        <target>כתובת</target>
+        <note>Add address collection view header</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>ביטול</target>
+        <note>Cancel button</note>
+      </trans-unit>
+      <trans-unit id="Coffee Neto">
+        <source>Coffee Neto</source>
+        <target>קפה נטו</target>
+        <note>Map annotation title</note>
+      </trans-unit>
+      <trans-unit id="Collect">
+        <source>Collect</source>
+        <target>איסוף</target>
+        <note>Title for Map view</note>
+      </trans-unit>
+      <trans-unit id="Contact Publisher">
+        <source>Contact Publisher</source>
+        <target>צור קשר עם המפרסם</target>
+        <note>the title of a button. means that a collector must contact the publisher</note>
+      </trans-unit>
+      <trans-unit id="Description">
+        <source>Description</source>
+        <target>תיאור</target>
+        <note>Add Description collection view header</note>
+      </trans-unit>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>בצע</target>
+        <note>done button title</note>
+      </trans-unit>
+      <trans-unit id="Event Description">
+        <source>Event Description</source>
+        <target>תיאור האירוע</target>
+        <note>the description of the event that will be published</note>
+      </trans-unit>
+      <trans-unit id="Event Title">
+        <source>Event Title</source>
+        <target>כותרת האירוע</target>
+        <note>the title of the event that will be published</note>
+      </trans-unit>
+      <trans-unit id="Event endnig date">
+        <source>Event endnig date</source>
+        <target>תאריך סיום האירוע</target>
+        <note>starting date title</note>
+      </trans-unit>
+      <trans-unit id="Event starting date">
+        <source>Event starting date</source>
+        <target>תאריך תחילת האירוע</target>
+        <note>starting date title</note>
+      </trans-unit>
+      <trans-unit id="Expired">
+        <source>Expired</source>
+        <target>לא פעיל</target>
+        <note>Status of event</note>
+      </trans-unit>
+      <trans-unit id="Free Pickup">
+        <source>Free Pickup</source>
+        <target>איסוף חופשי</target>
+        <note>the title of a button. means that everyone can come to pick up the food without contacting the pubkisher</note>
+      </trans-unit>
+      <trans-unit id="Guy's house">
+        <source>Guy's house</source>
+        <target>הבית של גיא</target>
+        <note>Map annotation title</note>
+      </trans-unit>
+      <trans-unit id="On Air">
+        <source>On Air</source>
+        <target>פעיל</target>
+        <note>Status of event</note>
+      </trans-unit>
+      <trans-unit id="PUBLISH">
+        <source>PUBLISH</source>
+        <target>פרסם</target>
+        <note>Publish event button title</note>
+      </trans-unit>
+      <trans-unit id="Photo">
+        <source>Photo</source>
+        <target>תמונה</target>
+        <note>Add photo collection view header title</note>
+      </trans-unit>
+      <trans-unit id="Pickup Method">
+        <source>Pickup Method</source>
+        <target>שיטת איסוף</target>
+        <note>the Pickup Method of the event that will be published</note>
+      </trans-unit>
+      <trans-unit id="Publish">
+        <source>Publish</source>
+        <target>פרסם</target>
+        <note>Publish the event to the server</note>
+      </trans-unit>
+      <trans-unit id="Shabtai Pizza">
+        <source>Shabtai Pizza</source>
+        <target>שבטאי פיצה</target>
+        <note>Map annotation title</note>
+      </trans-unit>
+      <trans-unit id="Shares">
+        <source>Shares</source>
+        <target>שיתופים</target>
+        <note>Title</note>
+      </trans-unit>
+      <trans-unit id="Starting Date">
+        <source>Starting Date</source>
+        <target>תאריך התחלה</target>
+        <note>Collection view header</note>
+      </trans-unit>
+      <trans-unit id="Take me with:">
+        <source>Take me with:</source>
+        <target>נווט בעזרת:</target>
+        <note>Asks the user to select his preferred navigation app</note>
+      </trans-unit>
+      <trans-unit id="Title">
+        <source>Title</source>
+        <target>כותרת</target>
+        <note>Add Title collection view header</note>
+      </trans-unit>
+      <trans-unit id="Type Of Collection">
+        <source>Type Of Collection</source>
+        <target>סוג האיסוף</target>
+        <note>The type of collecting collection view header</note>
+      </trans-unit>
+      <trans-unit id="beit halevy">
+        <source>beit halevy</source>
+        <target>בית הלוי</target>
+        <note>Map annotation subtitle</note>
+      </trans-unit>
+      <trans-unit id="ending Date">
+        <source>ending Date</source>
+        <target>תאריך סיום</target>
+        <note>Add Title collection view header</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="MapViewDemoTests/Info.plist" source-language="en" datatype="plaintext" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <target>$(PRODUCT_NAME)</target>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+        <target>1.0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

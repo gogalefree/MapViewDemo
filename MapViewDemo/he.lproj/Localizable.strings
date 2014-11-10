@@ -1,5 +1,11 @@
 /* Distance from current position to location point in kilometers. */
-" \(km) km from your location" = "קילומטרים ממיקומך הנוכחי \(km)";
+" %d km from your location" = "%d ק״מ ממיקומך הנוכחי";
+
+/* The prefix to add photo, add title etc. */
+"Add " = "הוספה ";
+
+/* Add address collection view header */
+"Address" = "כתובת";
 
 /* Cancel button */
 "Cancel" = "ביטול";
@@ -10,15 +16,78 @@
 /* Title for Map view */
 "Collect" = "איסוף";
 
+/* the title of a button. means that a collector must contact the publisher */
+"Contact Publisher" = "צור קשר עם המפרסם";
+
+/* Add Description collection view header */
+"Description" = "תיאור";
+
+/* done button title */
+"Done" = "בצע";
+
+/* the description of the event that will be published */
+"Event Description" = "תיאור האירוע";
+
+/* the title of the event that will be published */
+"Event Title" = "כותרת האירוע";
+
+/* starting date title */
+"Event endnig date" = "תאריך סיום האירוע";
+
+/* starting date title */
+"Event starting date" = "תאריך תחילת האירוע";
+
+/* Status of event */
+"Expired" = "לא פעיל";
+
+/* the title of a button. means that everyone can come to pick up the food without contacting the pubkisher */
+"Free Pickup" = "איסוף חופשי";
+
 /* Map annotation title */
 "Guy's house" = "הבית של גיא";
+
+/* Nav button */
+"Nav" = "נווט";
+
+/* Status of event */
+"On Air" = "פעיל";
+
+/* Order button */
+"Order" = "הזמן";
+
+/* Publish event button title */
+"PUBLISH" = "פרסם";
+
+/* Add photo collection view header title */
+"Photo" = "תמונה";
+
+/* the Pickup Method of the event that will be published */
+"Pickup Method" = "שיטת איסוף";
+
+/* Publish the event to the server */
+"Publish" = "פרסם";
 
 /* Map annotation title */
 "Shabtai Pizza" = "שבטאי פיצה";
 
+/* Title */
+"Shares" = "שיתופים";
+
+/* Collection view header */
+"Starting Date" = "תאריך התחלה";
+
 /* Asks the user to select his preferred navigation app */
 "Take me with:" = "נווט בעזרת:";
 
+/* Add Title collection view header */
+"Title" = "כותרת";
+
+/* The type of collecting collection view header */
+"Type Of Collection" = "סוג האיסוף";
+
 /* Map annotation subtitle */
 "beit halevy" = "בית הלוי";
+
+/* Add Title collection view header */
+"ending Date" = "תאריך סיום";
 

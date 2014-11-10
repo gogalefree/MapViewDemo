@@ -96,7 +96,9 @@ class MDPublishEventMainTVC: UITableViewController, UITableViewDataSource, UITab
         }
         
         if indexPath.section == self.dataSource.count-1 {
-            cell.textLabel.text = String.localizedStringWithFormat("PUBLISH", "publish event button title")
+            
+            // Localized String
+            cell.textLabel.text = NSLocalizedString("PUBLISH", comment: "Publish event button title")
             cell.imageView.image = nil
             cell.textLabel.textAlignment = .Center
             cell.textLabel.textColor = UIColor.grayColor()

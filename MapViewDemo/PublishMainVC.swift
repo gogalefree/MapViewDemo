@@ -18,8 +18,9 @@ class PublishMainVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        self.title = "Shares"
+        
+        // Localized String
+        self.title = NSLocalizedString("Shares", comment: "Title")
         dataSource = MDModel.sharedInstance.annotationsToPresent
     }
     
@@ -52,12 +53,14 @@ class PublishMainVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         cell.contentView.addSubview(titleLabel)
         
         var onAirLabel = UILabel(frame: CGRectMake(48, 55, 180, 33))
-        onAirLabel.text = "On Air"
+        // Localized String
+        onAirLabel.text = NSLocalizedString("On Air", comment: "Status of event")
         onAirLabel.font = UIFont.systemFontOfSize(14)
         onAirLabel.textAlignment  = NSTextAlignment.Center
         onAirLabel.textColor = UIColor.greenColor()
         if indexPath.item > 1 {
-            onAirLabel.text = "Expired"
+            // Localized String
+            onAirLabel.text = NSLocalizedString("Expired", comment: "Status of event")
             onAirLabel.textColor = UIColor.redColor()
         }
         cell.contentView.addSubview(onAirLabel)
